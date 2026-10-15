@@ -1,0 +1,15 @@
+{
+  "story_id": "US_036",
+  "condition": "baseline",
+  "model": "gpt-6.1-sol",
+  "started_utc": "2026-10-14T19:27:26.906258+00:00",
+  "elapsed_seconds": 23.53,
+  "exit_code": 0,
+  "turn_completed": true,
+  "input_sha256": "6fee758285c3458641b5d3f411a12bb34bf65385ec5e6d50c0f6533c8c408207",
+  "constitution_sha256": "607121b49f629db42e5a7afd615f73b6c6cdf1731d13e9d3f7ef07ecdd8808a4",
+  "skill_sha256": "1e9de2b2a673c923f7ca650fc40e4d5f24654163c577e0f1ceb70edfaa08114b",
+  "spec_unchanged": true,
+  "marker_count_raw": 5,
+  "warning": "Markers are NOT automatically substantive; manual review required."
+}

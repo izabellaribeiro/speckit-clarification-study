@@ -1,0 +1,20 @@
+{
+  "status": "Researcher-supplied dataset files; external version and historical transformations not independently established.",
+  "files": [
+    {
+      "file": "g13-planningpoker-uploaded.txt",
+      "sha256": "fa550777053504dc3c396749e2613d11fd59f4d641a6f308e5558defcaf4032a",
+      "lines": 54
+    },
+    {
+      "file": "g21-badcamp-uploaded.txt",
+      "sha256": "7d5d79eafdd2323e9969a5fce3e90bd0d1670a72c046a5999db05efbdecacbc2",
+      "lines": 69
+    },
+    {
+      "file": "g28-zooniverse-uploaded.txt",
+      "sha256": "7f6e7f86a3c1d72ae53b0c14187a84e510f62221d01f29be851f7eb0cf41f112",
+      "lines": 81
+    }
+  ]
+}

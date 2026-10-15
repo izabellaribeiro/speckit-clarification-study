@@ -1,0 +1,7 @@
+{
+  "archive": "experimento-icse.zip",
+  "archive_sha256": "4a8ef1a3a01d606569e7a726df00449a1934b20897c34ebaa723fb380c32342c",
+  "legacy_baselines": 15,
+  "matching_texts": 15,
+  "scope": "Prior experimental inputs and Git snapshots recovered; no original public-dataset line mappings or earlier wording transformations established."
+}
