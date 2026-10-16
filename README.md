@@ -68,7 +68,3 @@ The extraction writes `markers_for_review.csv` without invoking the model. Its r
 New executions require a compatible Codex CLI and access to the configured model. Model execution may incur costs and need not reproduce identical responses. The runner skips cases with completion markers and refuses to overwrite existing case directories without them. Use a separate copy for new runs and preserve the released results.
 
 The original experimental hashes identify original files; sanitized release copies have separate hashes in the release manifest. Private original logs and pre-release Git history are not included. Historical preparation notes describe the state when recorded and should be read with subsequent confirmation entries.
-
-## Manuscript reference
-
-The revised manuscript's Replication Materials section describes this package but does not yet include its repository URL. Add the repository link and identify the analyzed commit or release in the manuscript. If an anonymous submission is required, use an appropriate anonymous access mechanism rather than assuming this account-linked URL preserves anonymity.
