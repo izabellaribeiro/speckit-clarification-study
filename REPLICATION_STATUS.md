@@ -2,83 +2,84 @@
 
 ## Publicação
 
-O repositório público ainda não foi criado e não existe URL pública verificada.
-Não inserir um endereço fictício em `Replication Materials`.
-`prepare_release.py` prepara `release_candidate/` sem modificar os registros originais.
-A cópia inclui as 180 execuções (logs, respostas e metadados), entradas, runner,
-extrator, constituição, skill, planilhas, classificação final em CSV e proveniência.
-O manifesto registra hashes da cópia anonimizada. Os hashes experimentais existentes
-continuam identificando os arquivos originais, que podem diferir das cópias sanitizadas.
+A pesquisadora confirmou a publicação da pasta `release_candidate/` no GitHub.
+O remote `origin` desta cópia aponta para:
+https://github.com/izabellaribeiro/speckit-clarification-study
 
-A anonimização automática remove caminhos absolutos locais, emails e o nome/conta
-conhecidos da pesquisadora. Antes da publicação, revisar manualmente os arquivos,
-inclusive nomes, links e identificadores contextuais que não sejam capturados por
-esses padrões. Manter `results_new/`, backups e planilhas originais em armazenamento
-privado; publicar apenas a cópia revisada. Não publicar esta árvore inteira sem revisão.
-Depois de publicar, verificar o acesso sem autenticação e atualizar o artigo com a URL.
+Esta é a cópia de referência para comparação com o artigo. O endereço foi
+confirmado pela configuração local e pela informação da pesquisadora; esta
+atualização não verificou acesso público sem autenticação nem publicou mudanças.
+A afirmação anterior de que o repositório ainda não havia sido criado está superada.
+
+A seção Replication Materials do manuscrito revisado descreve os materiais,
+mas ainda precisa incluir o endereço do repositório e a versão analisada.
+Para submissão anônima, considerar que a URL contém o identificador da conta.
+
+`prepare_release.py` é o script de preparação original. Os arquivos de documentação
+da cópia publicada foram atualizados posteriormente; uma nova preparação deve
+preservar essas atualizações. O manifesto registra os hashes atuais da cópia
+sanitizada e exclui a si próprio. Os hashes experimentais continuam identificando
+os arquivos originais, que podem diferir das cópias sanitizadas. A anonimização
+automática original não certifica a remoção de todos os identificadores contextuais.
+Manter backups e registros privados separados dos materiais publicados.
+
+## Correspondência com o artigo revisado
+
+A recontagem dos marcadores nas 180 respostas de `results_new/` confirma 894 itens:
+224 baseline, 221 sintáticos, 224 semânticos e 225 pragmáticos. Há 176 execuções
+com cinco itens e 131 comparações baseline–variante com contagens iguais.
+A classificação final contém 100 perguntas, com 76 rótulos Classical Normative
+Scope e 24 Extended Scope (New AI Dimension), denominados no artigo requirements
+concerns e operational detail, respectivamente. Esses números descrevem contagens
+e conteúdo; não são taxas de detecção dos defeitos pretendidos.
 
 ## Consenso humano
 
 A pesquisadora informou revalidação por dois especialistas humanos, sem participação
 de IA nas decisões de classificação. Não foi fornecida uma data de revisão.
-`reference/final_audit.xlsx` permanece intacta. A cópia
-`reference/final_audit_documented.xlsx` acrescenta `Review Record` e conserva todas
-as abas e valores anteriores, inclusive as notas provisórias, como histórico.
-O registro atual aponta para os rótulos da aba `Final`; não houve nova classificação
-por IA nesta atualização. A confirmação não estabelece a independência das duas
-colunas anteriores: não apresentar kappa como confiabilidade humana.
-A abrangência da revalidação sobre os 135 mutantes ainda precisa ser esclarecida;
-não confundir consenso sobre perguntas com validação de defeitos nas histórias.
+`reference/final_audit_documented.xlsx` acrescenta Review Record e conserva as abas
+e valores anteriores, inclusive notas provisórias, como histórico. O registro atual
+aponta para os rótulos da aba Final, exportados em `final_classification.csv`;
+não houve nova classificação por IA nesta atualização.
+
+A confirmação não estabelece a independência das duas colunas anteriores:
+não apresentar kappa como confiabilidade humana. Consenso sobre perguntas não
+estabelece validação independente dos defeitos nas 135 variantes. O artigo não
+reivindica essa validação nem cobertura de detecção para o conjunto completo.
 
 ## Seleção das perguntas
 
-As 100 perguntas incluem 25 de cada condição. Segundo a pesquisadora, a seleção
-considerou diferentes temas e datasets. Trata-se de seleção intencional, não aleatória.
-Não foram fornecidos critérios reproduzíveis por item, cotas por tema/dataset ou
-uma ordenação de seleção. Não inferir esses detalhes nem estimar prevalência nas
-894 perguntas a partir desta amostra. A revalidação humana não muda essa limitação.
+As 100 perguntas incluem 25 de cada condição, provenientes de 77 execuções e
+39 histórias-pai. Segundo a pesquisadora, a seleção considerou diferentes temas
+e datasets. Trata-se de seleção intencional, não aleatória. Não foram fornecidos
+critérios reproduzíveis por item, cotas por tema/dataset ou ordenação de seleção.
+Não inferir esses detalhes nem estimar prevalência nas 894 perguntas a partir
+desta amostra. A revalidação humana não muda essa limitação.
 
-## Proveniência
+## Proveniência e confirmação posterior
 
-`reference/story_provenance.csv` deriva do manifesto existente e reúne os 45 pais.
-As 30 adições têm arquivo-fonte, linha, texto-fonte e baseline preparado registrados.
-Preservar esses mapeamentos e a remoção das cláusulas de benefício, com possível
-normalização do ator, conforme descrito no artigo. Essa preparação pode gerar
-pedidos de esclarecimento. Para os 15 casos antigos, o manifesto registra apenas
-baselines arquivados; fontes detalhadas e histórico anterior não estão disponíveis
-nos registros examinados. Não reconstruir ou inventar essa origem.
+`reference/story_provenance.csv` reúne os 45 pais e distingue texto-fonte,
+baseline preparado e variante. As 30 adições têm arquivo-fonte, linha e texto-fonte
+registrados; a comparação com os datasets fornecidos confirmou esses vínculos.
+A preparação removeu cláusulas de benefício e pode ter normalizado atores,
+criando necessidades de esclarecimento já nos baselines.
 
+Para US_001, a linha 4 de `g28-zooniverse-uploaded.txt` coincide com o baseline
+após retirar a cláusula de benefício. Para as outras 14 histórias antigas,
+`reference/legacy_source_comparison.csv` preserva correspondências e diferenças
+de redação. A pesquisadora posteriormente confirmou que essas histórias foram
+adaptadas das correspondências identificadas nos datasets. Os campos `source_file`,
+`source_line` e `source_full_text` registram esses vínculos; `source_verification`
+distingue confirmação humana de coincidência textual. Os campos `candidate_source_*`
+preservam a investigação anterior, não uma pendência atual.
+
+Essa confirmação supera as ressalvas históricas sobre vínculos candidatos.
+Não foram informadas a data nem a sequência detalhada das adaptações; não
+reconstruir essa história. As fontes fornecidas posteriormente estão em
+`reference/source_datasets/`, com hashes em `source_manifest.json`.
 
 ## Temas dos datasets
 
-Os temas descritivos das hist?rias est?o em `reference/dataset_themes.md` e na
-coluna `theme_summary` de `story_provenance.csv`. N?o representam cotas
-reconstru?das da sele??o das 100 perguntas. Os r?tulos de projeto do manifesto
-foram preservados; sem fontes originais para os casos antigos, n?o os
-reclassificamos a partir do tema.
-
-
-## Compara??o com os datasets fornecidos posteriormente
-
-As tr?s c?pias recebidas est?o em `reference/source_datasets/`, com hashes em
-`source_manifest.json`. A verifica??o confirmou texto e linha das 30 adi??es.
-Para US_001, a linha 4 de `g28-zooniverse-uploaded.txt` coincide com o baseline
-ap?s retirar a cl?usula de benef?cio. Para as outras 14 hist?rias antigas,
-`reference/legacy_source_comparison.csv` registra correspond?ncias candidatas e
-diferen?as de reda??o. Esses v?nculos ainda precisam de confirma??o hist?rica
-pela pesquisadora; sem isso, n?o equivalem a mapeamentos de origem comprovados.
-O ZIP n?o continha as fontes externas, mas agora elas foram fornecidas separadamente.
-A sequ?ncia de edi??o anterior ao experimento permanece sem documenta??o.
-
-
-## Confirma??o posterior da pesquisadora
-
-A pesquisadora confirmou que as 14 hist?rias antigas com diferen?as de reda??o
-foram adaptadas das correspond?ncias identificadas nos datasets fornecidos.
-Os campos `source_file`, `source_line` e `source_full_text` agora registram esses
-v?nculos; `source_verification` distingue a confirma??o humana da coincid?ncia
-textual. Os campos `candidate_source_*` preservam o registro da investiga??o
-anterior, n?o uma pend?ncia atual. As diferen?as de reda??o permanecem preservadas.
-N?o foi informada data da adapta??o nem sua sequ?ncia detalhada de edi??o.
-Esta confirma??o atualiza as ressalvas anteriores sobre os v?nculos candidatos.
-O artigo n?o foi atualizado nesta etapa, por solicita??o da pesquisadora.
+Os temas descritivos estão em `reference/dataset_themes.md` e em `theme_summary`
+de `story_provenance.csv`. Não representam cotas reconstruídas da seleção das
+100 perguntas. Os rótulos de projeto do manifesto foram preservados.

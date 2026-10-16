@@ -1,5 +1,5 @@
 {
-  "status": "UNPUBLISHED; manual disclosure review required",
+  "status": "PUBLISHED per researcher confirmation; local documentation updated",
   "run_count": 180,
   "redactions": [
     "absolute Windows/user-home paths",
@@ -220,7 +220,7 @@
     "reference/source_datasets/source_manifest.json": "19938bd3012cb408655edfb2e8abc8103b91bd2f48dead2f512ccd193fb0f8f5",
     "reference/speckit.clarify.md": "4aa7dc9c1c8320ad8f3ca9caec59e42363fca085d22d18f2d295ead3b2165ea5",
     "reference/story_provenance.csv": "7af75dde81ee3e41b70711671830b99510ef65861d9af52a9abfe5c549d7e8cd",
-    "REPLICATION_STATUS.md": "2619572c09d1abfcc68dd23949c2b79c9730e1a3c1d3440e7848669179ac3406",
+    "REPLICATION_STATUS.md": "2eaee2d0286934da0214968cec16241cd141a073d4294ff48e3c411460690bf4",
     "results_new/US_001_baseline/completed.json": "c58442e41c3252b7e70a8355a21dfe48001c6b6a7897cd96349844a676daf696",
     "results_new/US_001_baseline/events.jsonl": "bb2ce86d08a9eee7a8026ba122f76987e4ff10a20eae492c05c57a620aadf5a9",
     "results_new/US_001_baseline/final_response.md": "b95ed6b990d0f8d33a178f00c68aa7fc40b2c695fead9a34449d1c1d677502aa",
@@ -1155,6 +1155,7 @@
     "speckit_codex/.specify/workflows/workflow-registry.json": "6d39590e060eddea9c5d1584b4a79c533a08ed82f331ddcfc6862c45c08d7d4e",
     "speckit_codex/AGENTS.md": "890182a9f3a5e77334f3abfe0eabd18d01a1a5359448b016dcd34f62974d0407",
     "speckit_codex/specs/001-us001-baseline/spec.md": "b7b64bfb8eaf81d7c3607f343db30109e9cb523569a887af4099ec58f1e624c6",
-    "README.md": "4e47810cd4640858d4be56a2ad60f01fc33451a3ab0a93a4df65337f6291e539"
-  }
+    "README.md": "a464ab7b8d4f2fc1a40ed44cfded83adb54b2b1611f2d1d189e11d62520fdc7e"
+  },
+  "repository_url": "https://github.com/izabellaribeiro/speckit-clarification-study"
 }
