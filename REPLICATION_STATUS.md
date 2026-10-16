@@ -2,18 +2,15 @@
 
 ## Publicação
 
-A pesquisadora confirmou a publicação da pasta `release_candidate/` no GitHub.
-O remote `origin` desta cópia aponta para:
-https://github.com/izabellaribeiro/speckit-clarification-study
+Os materiais de replica??o s?o disponibilizados para avalia??o pelo endere?o an?nimo:
+https://anonymous.4open.science/r/speckit-clarification-study-111B/
 
-Esta é a cópia de referência para comparação com o artigo. O endereço foi
-confirmado pela configuração local e pela informação da pesquisadora; esta
-atualização não verificou acesso público sem autenticação nem publicou mudanças.
-A afirmação anterior de que o repositório ainda não havia sido criado está superada.
+Esta ? a c?pia de refer?ncia para compara??o com o artigo. A afirma??o hist?rica
+de que o reposit?rio ainda n?o havia sido criado est? superada. O acesso pelo
+servi?o an?nimo n?o foi verificado nesta atualiza??o.
 
-A seção Replication Materials do manuscrito revisado descreve os materiais,
-mas ainda precisa incluir o endereço do repositório e a versão analisada.
-Para submissão anônima, considerar que a URL contém o identificador da conta.
+A se??o Replication Materials do manuscrito deve usar o endere?o an?nimo e
+identificar a vers?o analisada sem expor a conta ou o reposit?rio de origem.
 
 `prepare_release.py` é o script de preparação original. Os arquivos de documentação
 da cópia publicada foram atualizados posteriormente; uma nova preparação deve
